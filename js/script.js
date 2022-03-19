@@ -63,7 +63,42 @@ function fadeIn() {
       $(this).removeClass('fadeUp');// fadeUpクラスを削除
     }
   });
+  
+  // フェードレフト
+  $('.fadeLeftTrigger').each(function(){
+    let scroll = $(window).scrollTop();
+    let triTop = $(this).offset().top + 100;
+    let winHeight = $(window).height();
+    if (scroll >= triTop - winHeight){
+      $(this).addClass('fadeLeft');
+    }else{
+      $(this).removeClass('fadeLeft');
+    }
+  });
+
+  // フェードライト
+  $('.fadeRightTrigger').each(function(){
+    let scroll = $(window).scrollTop();
+    let triTop = $(this).offset().top + 100;
+    let winHeight = $(window).height();
+    if (scroll >= triTop - winHeight){
+      $(this).addClass('fadeRight');
+    }else{
+      $(this).removeClass('fadeRight');
+    }
+  });
 }
 $(window).scroll(function () {
   fadeIn();
+});
+
+// スムーズスクロール
+$('nav a').on('click', function () {
+  let hrefElement = $(this).attr('href');
+  let headerHeight = $('#header').outerHeight(true);
+  let position = $(hrefElement).offset().top - headerHeight;
+  $('body,html').animate({
+    scrollTop: position
+  }, 500);
+  return false;
 });

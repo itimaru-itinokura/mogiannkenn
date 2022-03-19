@@ -10,10 +10,10 @@
   left: 50%;
   bottom: 0;
   width: 0;
-  height: 4vw;
+  height: 2vw;
   background: linear-gradient(transparent 60%, $sky);
   transform: translateX(-50%);
-  animation: border_anim 1s linear forwards;
+  animation: border_anim 0.8s linear forwards;
 }
 @keyframes border_anim {
   0% {
@@ -33,27 +33,47 @@
 @keyframes fadeUpAnime {
   0% {
     opacity: 0; /* 初めは見えないようにしておく */
-    transform: translateY(100px); /* 100px下に動かしておく */
+    transform: translateY(50px); /* 50px下に動かしておく */
   }
 
   100% {
-    opacity: 0; /* 可視化する */
+    opacity: 1; /* 可視化する */
     transform: translateY(0); /* 元の位置に戻す */
   }
 }
-// 下からフワッと
-.english_title.fadeUpTrigger.fadeUp {
-  animation: fadeUpAnime 2s forwards; /* fadeUpAnimeを0.8秒で一回実行 */
+
+/* fadeLeft */
+.fadeLeft {
+  animation: fadeLeftAnime 0.8s forwards; /* fadeLeftAnimeを0.8秒で一回実行 */
   opacity: 0;
+  overflow: hidden;
 }
-@keyframes fadeUpAnime {
+@keyframes fadeLeftAnime {
   from {
     opacity: 0; /* 初めは見えないようにしておく */
-    transform: translateY(100px); /* 100px下に動かしておく */
+    transform: translateX(100px);/* 100px右に動かしておく */
   }
 
   to {
     opacity: 1; /* 可視化する */
-    transform: translateY(0); /* 元の位置に戻す */
+    transform: translateX(0); /* 元の位置に戻す */
+  }
+}
+
+/* fadeRight */
+.fadeRight {
+  animation: fadeRightAnime 0.8s forwards; /* fadeRightAnimeを0.8秒で一回実行 */
+  opacity: 0;
+  overflow: hidden;
+}
+@keyframes fadeRightAnime {
+  from {
+    opacity: 0; /* 初めは見えないようにしておく */
+    transform: translateX(-100px);/* 100px左に動かしておく */
+  }
+
+  to {
+    opacity: 1; /* 可視化する */
+    transform: translateX(0); /* 元の位置に戻す */
   }
 }

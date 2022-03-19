@@ -5,7 +5,7 @@
   left: 50%;
   bottom: 0;
   width: 0;
-  height: 4vw;
+  height: 2vw;
   background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), to(#a2d5e6));
   background: linear-gradient(transparent 60%, #a2d5e6);
   -webkit-transform: translateX(-50%);

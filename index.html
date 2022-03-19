@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/color.css">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/keyframes.css">
   <!-- フォント -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,17 +18,17 @@
 </head>
 <body>
   <div class="inner">
-    <header>
+    <header id="header">
       <div class="header_bar">
         <div class="header_bar_title">いちまる歯科クリニック</div>
         <nav class="header_nav">
           <div class="header_nav_flex">
             <ul>
-              <li><a href="#">Top</a> </li>
-              <li><a href="#">Principle</a> </li>
-              <li><a href="#">Menu</a> </li>
-              <li><a href="#">FAQ</a> </li>
-              <li><a href="#">Contact</a> </li>
+              <li><a href="#top">Top</a> </li>
+              <li><a href="#principle">Principle</a> </li>
+              <li><a href="#menu">Menu</a> </li>
+              <li><a href="#faq">FAQ</a> </li>
+              <li><a href="#contact">Contact</a> </li>
             </ul>
           </div>
         </nav>
@@ -36,7 +37,7 @@
       <div class="header_ander_bar"></div>
     </header>
 
-    <div class="imgflame">
+    <div class="imgflame ">
       <img src="img/背景色なし.png" alt="">
     </div>
 
@@ -45,22 +46,22 @@
     </div>
 
     <main>
-      <section class="top">
+      <section class="top" id="top">
         <!-- <div class="top_bgc"> -->
           <div class="top_container">
             <div class="top_text">
               <h1>Dental care<br>that fits your life.</h1>
               <p>- 生涯、寄り添う歯科医療 -</p>
             </div>
-            <div class="img_flame">
-              <img src="img/top画像.jpg" alt="top画像">
+            <div class="img_flame fadeUpTrigger">
+              <img src="img/top画像.jpg" alt="top画像" class="fadeUpTrigger">
             </div>
           </div>
         <!-- </div> -->
           <div class="top_ander_bar"></div>
       </section>
   
-      <section class="principle">
+      <section class="principle" id="principle">
         <div class="title_box">
           <p class="english_title fadeUpTrigger">principle</p>
 
@@ -71,9 +72,9 @@
         <div class="principle_container">
           <div class="img_flame">
 
-            <img src="img/清潔な画像.jpg" alt="清潔な画像">
+            <img src="img/清潔な画像.jpg" alt="清潔な画像" class="fadeRightTrigger">
           </div>
-          <div class="principle_text">
+          <div class="principle_text fadeUpTrigger">
             <p>　歯医者に行かないと、、、<br>
             そう思いながらついつい後回しにしてしまうことはありませんか？<br>
             　私も子供の頃、歯医者が大嫌いでした。<br>
@@ -88,7 +89,7 @@
           </div>
         </div>
       </section>
-      <section class="dentalcare">
+      <section class="dentalcare" id="dentalcare">
         <div class="title_box">
           <p class="english_title fadeUpTrigger">Dental Care</p>
           <h2 class="title borderTrigger">
@@ -96,7 +97,7 @@
               歯のこと、お口のこと、なんでもご相談ください</h2>
             <!-- </div> -->
         </div>
-        <div class="dentalcare_text">
+        <div class="dentalcare_text fadeUpTrigger">
           　当院では、虫歯治療だけでなく、予防歯科、
           歯科矯正、審美歯科など幅広く診療を行なっております。<br>
           気になることがあればどんなことでもご相談ください。<br>
@@ -106,7 +107,7 @@
         </div>
       </section>
 
-      <section class="menu">
+      <section class="menu" id="menu">
         <div class="title_box">
           <p class="english_title fadeUpTrigger">Menu</p>
           <h2 class="title borderTrigger">診療内容</h2>
@@ -118,7 +119,7 @@
             </div>
             <div class="text_box">
               <h3 class="menu_title borderTrigger">小児歯科・小児矯正</h3>
-              <p class="menu_text">
+              <p class="menu_text fadeUpTrigger">
                 お子さまに、歯医者が怖いと
                 いう思い出を絶対に作らない
                 治療をお約束します。
@@ -132,7 +133,7 @@
             </div>
             <div class="text_box">
               <h3 class="menu_title borderTrigger">虫歯・歯周病治療</h3>
-              <p class="menu_text">
+              <p class="menu_text fadeUpTrigger">
                 痛くなる前に、来たくなる診療
                 を徹底しています。
               </p>
@@ -145,7 +146,7 @@
             </div>
             <div class="text_box">
               <h3 class="menu_title borderTrigger">ホワイトニング</h3>
-              <p class="menu_text">
+              <p class="menu_text fadeUpTrigger">
                 納得の白さとお値段、保証も
                 充実して、安心して施術して
                 いただけます。
@@ -159,7 +160,7 @@
             </div>
             <div class="text_box">
               <h3 class="menu_title borderTrigger">歯石除去</h3>
-              <p class="menu_text">
+              <p class="menu_text fadeUpTrigger">
                 丁寧な歯石除去だけでなく、
                 毎日のブラッシングの指導など、
                 これからも長くお付き合いする
@@ -170,7 +171,7 @@
         </div>
       </section>
 
-      <section class="faq">
+      <section class="faq" id="faq">
         <div class="title_box">
           <p class="english_title fadeUpTrigger">FAQ</p>
           <h2 class="title borderTrigger">よくある質問</h2>
@@ -245,15 +246,15 @@
         </div>
       </section>
 
-      <section class="contact">
+      <section class="contact" id="contact">
         <div class="title_box">
           <p class="english_title fadeUpTrigger">Contact</p>
           <h2 class="title borderTrigger">お問い合わせ</h2>
         </div>
 
         <div class="contact_inner">
-          <table>
-            <tr>
+          <table class="fadeUpTrigger">
+            <tr class="">
               <th>
                 <label for="" class="#">お名前</label>
               </th>
@@ -261,7 +262,7 @@
                 <input type="text">
               </td>
             </tr>
-            <tr>
+            <tr class="">
               <th>
                 <label for="" class="#">ふりがな</label>
               </th>
@@ -269,7 +270,7 @@
                 <input type="text">
               </td>
             </tr>
-            <tr>
+            <tr class="">
               <th>
                 <label for="" class="#">メールアドレス</label>
               </th>
@@ -277,7 +278,7 @@
                 <input type="text">
               </td>
             </tr>
-            <tr>
+            <tr class="">
               <th>
                 <label for="" class="#">お電話番号</label>
               </th>
@@ -285,7 +286,7 @@
                 <input type="text">
               </td>
             </tr>
-            <tr>
+            <tr class="">
               <th>
                 <label for="" class="#">お問い合わせ内容</label>
               </th>
