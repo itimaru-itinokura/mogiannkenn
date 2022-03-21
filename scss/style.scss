@@ -284,6 +284,7 @@ header {
   &_answer {
     display: none;
     padding: 2rem;
+    letter-spacing: 0.1rem;
     background-color: $sky;
     margin: 3%;
     &_flex {
@@ -676,6 +677,12 @@ footer {
         height: 2rem;
       }
     }
+    &_answer {
+      padding: 2rem 1rem;
+    }
+    &_text{
+        margin-left: 1.2rem;
+      }
   }
 
   .contact {

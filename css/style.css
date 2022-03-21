@@ -492,6 +492,7 @@ header .header_ander_bar {
 .faq_answer {
   display: none;
   padding: 2rem;
+  letter-spacing: 0.1rem;
   background-color: #a2d5e6;
   margin: 3%;
 }
@@ -898,6 +899,12 @@ footer {
   .faq_logo::after {
     width: 2rem;
     height: 2rem;
+  }
+  .faq_answer {
+    padding: 2rem 1rem;
+  }
+  .faq_text {
+    margin-left: 1.2rem;
   }
   .contact_inner {
     width: 100%;
