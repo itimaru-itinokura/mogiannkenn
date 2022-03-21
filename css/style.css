@@ -169,6 +169,7 @@
 
 body {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 .inner {
@@ -262,6 +263,7 @@ header .header_ander_bar {
   position: fixed;
   top: 90vh;
   left: 0;
+  z-index: 10000;
 }
 
 .reserve_btn p {

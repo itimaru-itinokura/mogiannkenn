@@ -94,6 +94,7 @@ $(window).scroll(function () {
 
 // スムーズスクロール
 $('nav a').on('click', function () {
+  $('body').removeClass('nav_open');
   let hrefElement = $(this).attr('href');
   let headerHeight = $('#header').outerHeight(true);
   let position = $(hrefElement).offset().top - headerHeight;
