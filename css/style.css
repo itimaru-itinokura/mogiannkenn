@@ -893,6 +893,9 @@ footer {
   .menu_text {
     margin: 2rem auto;
   }
+  .faq_box {
+    width: 95%;
+  }
   .faq_logo {
     font-size: small;
   }

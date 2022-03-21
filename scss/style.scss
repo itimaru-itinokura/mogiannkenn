@@ -670,6 +670,9 @@ footer {
     }
   }
   .faq {
+    &_box{
+      width: 95%;
+    }
     &_logo {
       font-size: small;
       &::after {
