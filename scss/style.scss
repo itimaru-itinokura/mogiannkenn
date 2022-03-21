@@ -65,6 +65,7 @@ header {
   right: -34%;
   z-index: -1000;
   opacity: 0.5;
+  overflow: hidden;
   img {
     width: 100%;
   }
@@ -152,6 +153,10 @@ header {
   .english_title {
     font-size: 1.5vw;
     font-family: cursive;
+    visibility: hidden;
+    // -webkit-backface-visibility: hidden;
+    // backface-visibility: hidden;
+    // overflow:hidden
     &::before,
     &::after {
       content: "";
@@ -187,12 +192,15 @@ header {
       width: 100%;
       border-radius: 44% 56% 58% 42% / 61% 34% 66% 39%;
       box-shadow: 6.5vw 10vw 0.7rem lightgray;
+      visibility: hidden;
     }
     .principle_text {
       width: 45%;
       display: flex;
       justify-content: center;
       align-items: center;
+      visibility: hidden;
+
       p {
         font-size: 1.2vw;
         line-height: 3vw;
@@ -210,6 +218,7 @@ header {
     letter-spacing: 1vw;
     margin: 0 auto;
     text-align: center;
+    visibility: hidden;
   }
 }
 
@@ -237,6 +246,7 @@ header {
   }
   &_text {
     font-size: 1.2vw;
+    visibility: hidden;
   }
   .img_box {
     img {
@@ -257,6 +267,7 @@ header {
     width: 80%;
     margin: 1rem auto;
     border: solid gray 1px;
+    visibility: hidden;
   }
   &_question,
   &_answer {
@@ -335,6 +346,7 @@ header {
     width: 100%;
     border: solid 1px gray;
     border-collapse: collapse;
+    visibility: hidden;
   }
 
   th {
@@ -651,6 +663,7 @@ footer {
     // }
     &_text {
       margin: 2rem auto;
+      //
     }
   }
   .faq {

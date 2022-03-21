@@ -29,15 +29,17 @@
 .fadeUp {
   animation: fadeUpAnime 0.8s forwards; /* fadeUpAnimeを0.8秒で一回実行 */
   opacity: 0;
+  // visibility: visible;
 }
 @keyframes fadeUpAnime {
-  0% {
+  from {
     opacity: 0; /* 初めは見えないようにしておく */
     transform: translateY(50px); /* 50px下に動かしておく */
   }
 
-  100% {
+  to {
     opacity: 1; /* 可視化する */
+    visibility: visible;
     transform: translateY(0); /* 元の位置に戻す */
   }
 }
@@ -47,16 +49,18 @@
   animation: fadeLeftAnime 0.8s forwards; /* fadeLeftAnimeを0.8秒で一回実行 */
   opacity: 0;
   overflow: hidden;
+  visibility: visible;
 }
 @keyframes fadeLeftAnime {
   from {
     opacity: 0; /* 初めは見えないようにしておく */
-    transform: translateX(100px);/* 100px右に動かしておく */
+    transform: translateX(100px); /* 100px右に動かしておく */
   }
 
   to {
     opacity: 1; /* 可視化する */
     transform: translateX(0); /* 元の位置に戻す */
+    visibility: visible;
   }
 }
 
@@ -65,15 +69,17 @@
   animation: fadeRightAnime 0.8s forwards; /* fadeRightAnimeを0.8秒で一回実行 */
   opacity: 0;
   overflow: hidden;
+  visibility: visible;
 }
 @keyframes fadeRightAnime {
   from {
     opacity: 0; /* 初めは見えないようにしておく */
-    transform: translateX(-100px);/* 100px左に動かしておく */
+    transform: translateX(-100px); /* 100px左に動かしておく */
   }
 
   to {
     opacity: 1; /* 可視化する */
     transform: translateX(0); /* 元の位置に戻す */
+    visibility: visible;
   }
 }
